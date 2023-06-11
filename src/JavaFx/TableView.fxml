@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane fx:id="GridPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="534.0" prefWidth="734.0" stylesheets="@gui.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.TransactionsHistoryController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <VBox fx:id="VBox" prefHeight="600.0" prefWidth="734.0">
+            <children>
+                <TableView fx:id="TableView" prefHeight="599.0" prefWidth="734.0">
+                    <columns>
+                        <TableColumn fx:id="TransactionID" prefWidth="191.19997864961624" text="Transaction ID" />
+                        <TableColumn fx:id="type" minWidth="3.199981689453125" prefWidth="169.6000518798828" text="Type" />
+                        <TableColumn fx:id="amount" prefWidth="157.5999755859375" text="Amount" />
+                        <TableColumn fx:id="date" prefWidth="214.39999999999998" text="Date" />
+                    </columns>
+                </TableView>
+                <HBox fx:id="HorizontalBox" prefHeight="34.0" prefWidth="734.0">
+                    <children>
+                        <Button fx:id="backButton" mnemonicParsing="false" onAction="#goToHome" text="Back" textAlignment="CENTER">
+                            <HBox.margin>
+                                <Insets right="630.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</GridPane>

@@ -1,0 +1,30 @@
+/*@font-face {*/
+/*    font-family: "Figtree";*/
+/*    src: url("/Images/Figtree-VariableFont_wght.ttf");*/
+/*}*/
+
+.button {
+    -fx-background-radius: 15px;
+    -fx-background-color: #caedff ;
+}
+.button:hover{
+    -fx-background-radius: 15px;
+    -fx-background-color: #91c9ff ;
+}
+
+.button:pressed{
+    -fx-background-radius: 15px;
+    -fx-background-color: #caedff ;
+}
+
+.text-field{
+    -fx-background-radius: 15px;
+}
+.root{
+    -fx-background-image: url("../Images/back6.png");
+    -fx-background-size: cover;
+}
+.label{
+    -fx-font-size: 16;
+}
+
